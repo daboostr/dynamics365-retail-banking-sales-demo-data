@@ -13,6 +13,30 @@ This project generates realistic banking pipeline data in waves and can also man
 
 Wave 1 is intentionally not part of the automated orchestrator because it was originally designed as a preview/approval-first flow.
 
+## Architecture (Mermaid)
+
+```mermaid
+flowchart TD
+	A[Invoke-BankingDemoSeed.ps1] --> B[Config: seed-config.json]
+	A --> C[Wave 2 Seed]
+	A --> D[Wave 3 Seed]
+	A --> E[Wave 4 Seed]
+	A --> F[Sequence Create]
+	A --> G[Sequence Build]
+	A --> H[Sequence Activate]
+	A --> I[Wave 5 Seed + Sequence Application]
+	A --> J[Validation]
+
+	C --> K[(Dataverse: account/contact/opportunity)]
+	D --> L[(Dataverse: lead/opportunity/task)]
+	E --> M[(Dataverse: account/opportunity/task)]
+	F --> N[(Dataverse: msdyn_sequence)]
+	G --> N
+	H --> N
+	I --> O[(Dataverse: lead/opportunity/task/msdyn_sequencetarget)]
+	J --> P[Validation CSV + Run Logs + Scorecards]
+```
+
 ## Records generated (by wave)
 
 ### Wave 2 (`seed-retail-wave2.ps1`)

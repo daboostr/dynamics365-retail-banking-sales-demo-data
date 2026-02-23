@@ -39,6 +39,30 @@ When enabled, these scripts run in V1:
 
 These can be skipped per run (`-SkipSequences`) or disabled in config.
 
+## Architecture (Mermaid)
+
+```mermaid
+flowchart TD
+  A[Invoke-BankingDemoSeed.ps1] --> B[Config: seed-config.json]
+  A --> C[Wave 2 Seed]
+  A --> D[Wave 3 Seed]
+  A --> E[Wave 4 Seed]
+  A --> F[Sequence Create]
+  A --> G[Sequence Build]
+  A --> H[Sequence Activate]
+  A --> I[Wave 5 Seed + Sequence Application]
+  A --> J[Validation]
+
+  C --> K[(Dataverse: account/contact/opportunity)]
+  D --> L[(Dataverse: lead/opportunity/task)]
+  E --> M[(Dataverse: account/opportunity/task)]
+  F --> N[(Dataverse: msdyn_sequence)]
+  G --> N
+  H --> N
+  I --> O[(Dataverse: lead/opportunity/task/msdyn_sequencetarget)]
+  J --> P[Validation CSV + Run Logs + Scorecards]
+```
+
 ## Files
 - `Invoke-BankingDemoSeed.ps1` — orchestrator
 - `seed-config.template.json` — base config contract
