@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataverseDemoData generatedOn="2026-02-17" environment="FY25_Banking" entity="opportunity" scenario="RetailBanking">
+  <sourceContacts selectionRule="Most recently modified active contacts (descending modifiedon)">
+    <contact id="6fc237ca-388f-f011-b4cc-000d3a5952f0" fullname="Liam Bennett" modifiedon="2026-01-21T10:18:00" />
+    <contact id="78ee1bfd-bf9f-4c1c-99ed-56663b4f68ac" fullname="Jacob Kataras" modifiedon="2025-12-03T13:13:00" />
+    <contact id="f9bb4db7-45bc-f011-bbd3-000d3a5952f0" fullname="Wlqqahq Sizlaedd" modifiedon="2025-11-07T17:53:00" />
+    <contact id="a7bf9a01-b056-e711-abaa-00155d701c02" fullname="Abbie Gardiner" modifiedon="2025-10-13T10:28:00" />
+    <contact id="70a457d6-242d-f011-8c4e-000d3a5952f0" fullname="Glenn Gary" modifiedon="2025-10-03T09:50:00" />
+  </sourceContacts>
+
+  <opportunities>
+    <opportunity>
+      <name>Retail Banking - Mortgage Pre-Approval Advisory</name>
+      <description>Customer is exploring first-home purchase and needs a pre-approval package with rate lock discussion.</description>
+      <estimatedvalue>450000</estimatedvalue>
+      <estimatedclosedate>2026-03-31</estimatedclosedate>
+      <opportunityratingcode>1</opportunityratingcode>
+      <customerid type="contact" id="6fc237ca-388f-f011-b4cc-000d3a5952f0" />
+      <contactid id="6fc237ca-388f-f011-b4cc-000d3a5952f0" />
+      <parentcontactid id="6fc237ca-388f-f011-b4cc-000d3a5952f0" />
+    </opportunity>
+
+    <opportunity>
+      <name>Retail Banking - HELOC Renewal and Upsell</name>
+      <description>Existing homeowner reviewing HELOC renewal with potential increase in credit line and bundled checking incentives.</description>
+      <estimatedvalue>120000</estimatedvalue>
+      <estimatedclosedate>2026-04-15</estimatedclosedate>
+      <opportunityratingcode>1</opportunityratingcode>
+      <customerid type="contact" id="78ee1bfd-bf9f-4c1c-99ed-56663b4f68ac" />
+      <contactid id="78ee1bfd-bf9f-4c1c-99ed-56663b4f68ac" />
+      <parentcontactid id="78ee1bfd-bf9f-4c1c-99ed-56663b4f68ac" />
+    </opportunity>
+
+    <opportunity>
+      <name>Retail Banking - Auto Loan Refinance</name>
+      <description>Customer seeks lower APR through refinance, with optional payment protection and mobile banking enrollment.</description>
+      <estimatedvalue>38000</estimatedvalue>
+      <estimatedclosedate>2026-03-20</estimatedclosedate>
+      <opportunityratingcode>2</opportunityratingcode>
+      <customerid type="contact" id="f9bb4db7-45bc-f011-bbd3-000d3a5952f0" />
+      <contactid id="f9bb4db7-45bc-f011-bbd3-000d3a5952f0" />
+      <parentcontactid id="f9bb4db7-45bc-f011-bbd3-000d3a5952f0" />
+    </opportunity>
+
+    <opportunity>
+      <name>Retail Banking - Premium Checking Upgrade</name>
+      <description>Customer is a strong fit for premium checking with fee waivers, debit rewards, and digital wallet features.</description>
+      <estimatedvalue>8000</estimatedvalue>
+      <estimatedclosedate>2026-02-28</estimatedclosedate>
+      <opportunityratingcode>1</opportunityratingcode>
+      <customerid type="contact" id="a7bf9a01-b056-e711-abaa-00155d701c02" />
+      <contactid id="a7bf9a01-b056-e711-abaa-00155d701c02" />
+      <parentcontactid id="a7bf9a01-b056-e711-abaa-00155d701c02" />
+    </opportunity>
+
+    <opportunity>
+      <name>Retail Banking - High-Yield Savings and CD Ladder</name>
+      <description>Customer evaluating liquidity and yield options with a blended high-yield savings + 12 month CD ladder strategy.</description>
+      <estimatedvalue>95000</estimatedvalue>
+      <estimatedclosedate>2026-04-30</estimatedclosedate>
+      <opportunityratingcode>2</opportunityratingcode>
+      <customerid type="contact" id="70a457d6-242d-f011-8c4e-000d3a5952f0" />
+      <contactid id="70a457d6-242d-f011-8c4e-000d3a5952f0" />
+      <parentcontactid id="70a457d6-242d-f011-8c4e-000d3a5952f0" />
+    </opportunity>
+  </opportunities>
+</dataverseDemoData>

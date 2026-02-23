@@ -1,0 +1,17 @@
+<fetch>
+  <entity name="opportunity">
+    <attribute name="opportunityid" />
+    <attribute name="name" />
+    <attribute name="estimatedvalue" />
+    <attribute name="estimatedclosedate" />
+    <attribute name="modifiedon" />
+    <order attribute="modifiedon" descending="true" />
+    <filter type="or">
+      <condition attribute="opportunityid" operator="eq" value="7dec6956-810c-f111-8406-0022480b6bd9" />
+      <condition attribute="opportunityid" operator="eq" value="b69b9d62-810c-f111-8406-0022480b6bd9" />
+      <condition attribute="opportunityid" operator="eq" value="d99b9d62-810c-f111-8406-0022480b6bd9" />
+      <condition attribute="opportunityid" operator="eq" value="f89b9d62-810c-f111-8406-0022480b6bd9" />
+      <condition attribute="opportunityid" operator="eq" value="229c9d62-810c-f111-8406-0022480b6bd9" />
+    </filter>
+  </entity>
+</fetch>

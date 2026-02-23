@@ -1,0 +1,14 @@
+<fetch>
+  <entity name="contact">
+    <attribute name="contactid" />
+    <attribute name="fullname" />
+    <attribute name="modifiedon" />
+    <attribute name="emailaddress1" />
+    <order attribute="modifiedon" descending="true" />
+    <filter>
+      <condition attribute="statecode" operator="eq" value="0" />
+      <condition attribute="modifiedon" operator="on-or-after" value="2025-10-01" />
+      <condition attribute="fullname" operator="not-null" />
+    </filter>
+  </entity>
+</fetch>

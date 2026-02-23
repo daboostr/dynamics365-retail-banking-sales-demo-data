@@ -1,0 +1,17 @@
+<fetch>
+  <entity name="msdyn_sequence">
+    <attribute name="msdyn_sequenceid"/>
+    <attribute name="msdyn_name"/>
+    <attribute name="msdyn_parentsequence"/>
+    <attribute name="statecode"/>
+    <attribute name="statuscode"/>
+    <attribute name="createdon"/>
+    <filter>
+      <condition attribute="msdyn_sequenceid" operator="in">
+        <value>f9fe9661-8f0c-f111-8406-0022480b6bd9</value>
+        <value>0fff9661-8f0c-f111-8406-0022480b6bd9</value>
+        <value>1cff9661-8f0c-f111-8406-0022480b6bd9</value>
+      </condition>
+    </filter>
+  </entity>
+</fetch>

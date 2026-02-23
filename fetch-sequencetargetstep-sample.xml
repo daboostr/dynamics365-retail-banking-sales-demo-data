@@ -1,0 +1,10 @@
+<fetch count="10">
+  <entity name="msdyn_sequencetargetstep">
+    <attribute name="msdyn_sequencetargetstepid"/>
+    <attribute name="msdyn_name"/>
+    <attribute name="msdyn_action"/>
+    <attribute name="msdyn_parentsequencetarget"/>
+    <attribute name="statecode"/>
+    <order attribute="createdon" descending="true"/>
+  </entity>
+</fetch>

@@ -1,0 +1,12 @@
+<fetch count="20">
+  <entity name="msdyn_sequence">
+    <attribute name="msdyn_sequenceid"/>
+    <attribute name="msdyn_name"/>
+    <attribute name="msdyn_regardingentityname"/>
+    <attribute name="msdyn_type"/>
+    <attribute name="statecode"/>
+    <attribute name="statuscode"/>
+    <attribute name="ownerid"/>
+    <order attribute="createdon" descending="true"/>
+  </entity>
+</fetch>

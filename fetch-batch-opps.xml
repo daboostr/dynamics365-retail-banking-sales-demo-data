@@ -1,0 +1,11 @@
+﻿<fetch>
+  <entity name='opportunity'>
+    <attribute name='opportunityid'/>
+    <attribute name='name'/>
+    <attribute name='estimatedvalue'/>
+    <attribute name='estimatedclosedate'/>
+    <filter>
+      <condition attribute='name' operator='like' value='%[RBP-20260217-203433]%' />
+    </filter>
+  </entity>
+</fetch>

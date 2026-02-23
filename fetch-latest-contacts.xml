@@ -1,0 +1,14 @@
+<fetch count="5">
+  <entity name="contact">
+    <attribute name="contactid" />
+    <attribute name="fullname" />
+    <attribute name="modifiedon" />
+    <attribute name="emailaddress1" />
+    <attribute name="mobilephone" />
+    <order attribute="modifiedon" descending="true" />
+    <filter>
+      <condition attribute="statecode" operator="eq" value="0" />
+      <condition attribute="fullname" operator="not-null" />
+    </filter>
+  </entity>
+</fetch>

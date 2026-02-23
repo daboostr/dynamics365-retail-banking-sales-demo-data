@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Retail Banking Demo Seed reusable V1 config"
+  },
+  "environment": {
+    "orgUrl": "https://org9937c5ba.crm.dynamics.com",
+    "username": "admin@D365DemoTSCE41978460.onmicrosoft.com"
+  },
+  "execution": {
+    "defaultFromWave": 2,
+    "defaultToWave": 5,
+    "stopOnError": true,
+    "logRetentionRuns": 20
+  },
+  "phases": [
+    {
+      "name": "wave2",
+      "wave": 2,
+      "script": "seed-retail-wave2.ps1",
+      "enabled": true,
+      "kind": "seed"
+    },
+    {
+      "name": "wave3",
+      "wave": 3,
+      "script": "seed-retail-wave3.ps1",
+      "enabled": true,
+      "kind": "seed"
+    },
+    {
+      "name": "wave4",
+      "wave": 4,
+      "script": "seed-retail-wave4.ps1",
+      "enabled": true,
+      "kind": "seed"
+    },
+    {
+      "name": "sequence-create",
+      "wave": 4,
+      "script": "create-sales-accelerator-sequences-wave1-4.ps1",
+      "enabled": true,
+      "kind": "sequence"
+    },
+    {
+      "name": "sequence-build",
+      "wave": 4,
+      "script": "build-sales-accelerator-sequences-wave1-4.ps1",
+      "enabled": true,
+      "kind": "sequence"
+    },
+    {
+      "name": "sequence-activate",
+      "wave": 4,
+      "script": "activate-sales-sequences-wave1-4.ps1",
+      "enabled": true,
+      "kind": "sequence"
+    },
+    {
+      "name": "wave5",
+      "wave": 5,
+      "script": "launch-wave5-with-sequences.ps1",
+      "enabled": true,
+      "kind": "seed"
+    },
+    {
+      "name": "validate-wave5-seqtargets",
+      "wave": 5,
+      "script": "validate-wave5-seqtargets.ps1",
+      "enabled": true,
+      "kind": "validation"
+    }
+  ]
+}

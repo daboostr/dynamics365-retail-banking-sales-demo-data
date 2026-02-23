@@ -1,0 +1,18 @@
+# Generated run artifacts
+v1-seed-framework/runs/
+
+# Local debug/diagnostic outputs
+wave5-rerun*.log
+
+# Generated seed output snapshots
+wave3-dashboard-RBP*.json
+wave4-scorecard-RBP*.json
+wave4-scorecard-RBP*.csv
+wave5-scorecard-RBP*.json
+wave5-sequence-summary-RBP*.csv
+wave5-sequencetarget-validation-RBP*.csv
+
+# Temp/debug helper scripts
+debug-*.ps1
+inspect-applied-sequence-id.ps1
+find-appliedinstance-entity.ps1

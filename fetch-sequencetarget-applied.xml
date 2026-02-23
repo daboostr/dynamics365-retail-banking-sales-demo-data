@@ -1,0 +1,10 @@
+<fetch count="15">
+  <entity name="msdyn_sequencetarget">
+    <attribute name="msdyn_sequencetargetid"/>
+    <attribute name="msdyn_parentsequence"/>
+    <attribute name="msdyn_target"/>
+    <attribute name="msdyn_appliedsequenceinstance"/>
+    <attribute name="msdyn_sequencetargetuniquekey"/>
+    <order attribute="createdon" descending="true"/>
+  </entity>
+</fetch>

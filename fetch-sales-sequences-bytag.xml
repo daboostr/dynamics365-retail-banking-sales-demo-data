@@ -1,0 +1,14 @@
+<fetch count="20">
+  <entity name="msdyn_sequence">
+    <attribute name="msdyn_sequenceid"/>
+    <attribute name="msdyn_name"/>
+    <attribute name="msdyn_type"/>
+    <attribute name="msdyn_parentsequence"/>
+    <attribute name="statecode"/>
+    <attribute name="statuscode"/>
+    <order attribute="createdon" descending="true"/>
+    <filter>
+      <condition attribute="msdyn_name" operator="like" value="%SASEQ-20260217-220218%" />
+    </filter>
+  </entity>
+</fetch>

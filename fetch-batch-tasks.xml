@@ -1,0 +1,9 @@
+﻿<fetch>
+  <entity name='task'>
+    <attribute name='activityid'/>
+    <attribute name='subject'/>
+    <filter>
+      <condition attribute='subject' operator='like' value='%[RBP-20260217-203433]%' />
+    </filter>
+  </entity>
+</fetch>

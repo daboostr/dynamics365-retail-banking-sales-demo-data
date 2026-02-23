@@ -1,0 +1,11 @@
+<fetch>
+  <entity name="lead">
+    <attribute name="leadid"/>
+    <attribute name="subject"/>
+    <attribute name="statecode"/>
+    <attribute name="statuscode"/>
+    <filter>
+      <condition attribute="subject" operator="like" value="%RBP3-20260217-212754%"/>
+    </filter>
+  </entity>
+</fetch>

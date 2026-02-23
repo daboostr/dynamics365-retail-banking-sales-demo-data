@@ -1,0 +1,12 @@
+<fetch>
+  <entity name="opportunity">
+    <attribute name="opportunityid"/>
+    <attribute name="name"/>
+    <attribute name="statecode"/>
+    <attribute name="statuscode"/>
+    <attribute name="estimatedvalue"/>
+    <filter>
+      <condition attribute="name" operator="like" value="%RBP2-20260217-211711%"/>
+    </filter>
+  </entity>
+</fetch>
