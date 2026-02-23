@@ -8,6 +8,37 @@ This V1 framework gives you a single entrypoint to re-run your Banking demo seed
 - Run artifacts per execution (manifest + per-phase logs)
 - Support for partial reruns and validation-only mode
 
+## What gets generated
+
+The orchestrator runs existing scripts and generates/updates these Dataverse records across phases:
+
+- `account` (household and churn-risk context)
+- `contact` (household relationships and sequence targeting)
+- `lead` (new lead cohorts)
+- `opportunity` (branch/cross-sell/RM pipeline opportunities)
+- `task` (retention, NBA, and SLA simulation actions)
+- `msdyn_sequence` (definitions/activations when sequence phases are enabled)
+- `msdyn_sequencetarget` (Wave 5 sequence application/backfill)
+
+Wave 1 is intentionally excluded from V1 automation (original preview/approval-first flow).
+
+## Wave behavior (high level)
+
+- **Wave 2**: household accounts, contact linking, branch opportunities, won/lost/open mix, branch KPI summary
+- **Wave 3**: lead creation, partial conversion to opportunities, next-best-action tasks, manager dashboard extract
+- **Wave 4**: cross-sell opportunities, churn-risk tagging, retention + NBA tasks, executive scorecards
+- **Wave 5**: RM cohort leads/opportunities/tasks, SLA simulation, sequence target application + summary exports
+
+## Sequence phases
+
+When enabled, these scripts run in V1:
+
+- `create-sales-accelerator-sequences-wave1-4.ps1`
+- `build-sales-accelerator-sequences-wave1-4.ps1`
+- `activate-sales-sequences-wave1-4.ps1`
+
+These can be skipped per run (`-SkipSequences`) or disabled in config.
+
 ## Files
 - `Invoke-BankingDemoSeed.ps1` — orchestrator
 - `seed-config.template.json` — base config contract
@@ -78,6 +109,14 @@ Each run creates a folder:
 Artifacts include:
 - `run-manifest.json`
 - `phase-<index>-<phaseName>.log`
+
+Additional wave-specific exports are written by underlying scripts (for example Wave 3/4/5 JSON/CSV scorecards in the repo root).
+
+## Related docs
+
+- Root overview: `../README.md`
+- Contribution guide: `../CONTRIBUTING.md`
+- License: `../LICENSE`
 
 ## Notes
 - Existing seed scripts are executed as-is from `d365-model`.
